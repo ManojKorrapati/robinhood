@@ -1,5 +1,4 @@
 import glob
-
 from shutil import which
 from aiohttp_jinja2 import template
 
