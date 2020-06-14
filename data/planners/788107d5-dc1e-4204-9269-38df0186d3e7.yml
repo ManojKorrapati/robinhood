@@ -9,6 +9,6 @@ description: |
   command having no unsatisfied variables. It then waits for each agent to complete their list of commands before
   moving on to the next phase. In phaseless operations, all applicable commands are executed in a single phase which
   will then run to completion and finish the operation.
-module: plugins.robinhood.app.batch
+module: plugins.secorg.app.batch
 params: {}
 ignore_enforcement_modules: []
