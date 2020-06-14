@@ -1,6 +1,6 @@
 from app.objects.c_obfuscator import Obfuscator
 from app.utility.base_world import BaseWorld
-from plugins.secorg.app.secorg_svc import RobinhoodService
+from plugins.secorg.app.secorg_svc import SecorgService
 
 name = 'Secorg'
 description = 'A stockpile of abilities, adversaries, payloads and planners'
