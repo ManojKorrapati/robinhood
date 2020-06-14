@@ -6,19 +6,19 @@ from aiohttp_jinja2 import template
 from app.utility.base_service import BaseService
 
 
-class RobinhoodService(BaseService):
+class SecorgService(BaseService):
 
     def __init__(self, services):
         self.auth_svc = services.get('auth_svc')
         self.file_svc = services.get('file_svc')
         self.data_svc = services.get('data_svc')
         self.contact_svc = services.get('contact_svc')
-        self.log = self.add_service('robinhood_svc', self)
+        self.log = self.add_service('secorg_svc', self)
 
-    @template('robinhood.html')
+    @template('secorg.html')
     async def splash(self, request):
-        abilities = [a for a in await self.data_svc.locate('abilities') if await a.which_plugin() == 'robinhood']
-        adversaries = [a for a in await self.data_svc.locate('adversaries') if await a.which_plugin() == 'robinhood']
+        abilities = [a for a in await self.data_svc.locate('abilities') if await a.which_plugin() == 'secorg']
+        adversaries = [a for a in await self.data_svc.locate('adversaries') if await a.which_plugin() == 'secorg']
         return dict(abilities=abilities, adversaries=adversaries)
 
     async def dynamically_compile(self, headers):
