@@ -1,4 +1,4 @@
-from plugins.robinhood.app.requirements.base_requirement import BaseRequirement
+from plugins.secorg.app.requirements.base_requirement import BaseRequirement
 
 
 class Requirement(BaseRequirement):
