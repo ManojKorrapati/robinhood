@@ -1,4 +1,4 @@
-# CALDERA plugin: Robinhood
+# CALDERA plugin: Secorg
 
 A plugin supplying CALDERA with additional TTPs and adversary profiles.
 
