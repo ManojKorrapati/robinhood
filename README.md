@@ -1,4 +1,4 @@
-# CALDERA plugin: Secorg
+# CALDERA plugin: test
 
 A plugin supplying CALDERA with additional TTPs and adversary profiles.
 
